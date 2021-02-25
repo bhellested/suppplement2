@@ -164,7 +164,7 @@ public class RentACatImpl implements RentACat {
 	public static void main(String[] args) {
 
 		// Turn off automatic bug injection in the Cat class.
-		Cat.bugInjectionOn = false;
+		Cat._bugInjectionOn = false;
 
 		RentACat rc = new RentACatImpl();
 
