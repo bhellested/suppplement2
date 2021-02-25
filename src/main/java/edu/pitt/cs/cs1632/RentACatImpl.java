@@ -18,7 +18,7 @@ public class RentACatImpl implements RentACat {
 
 	public boolean returnCat(int id) {
 		Cat c= this.getCat(id);
-		if(c==null)
+		if(c==null|| c.getRented()==false)
 			return false;
 		else {
 			c.returnCat();
